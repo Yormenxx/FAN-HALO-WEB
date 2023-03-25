@@ -1,7 +1,7 @@
 # FAN-HALO-WEB
 Creando un landing inspirado en Halo , tomando como referencia la página oficial
 
-Este landing page cuenta con los apartados correspondientes de las entregas posteriores que han existido en el universo de Halo.
+Este landing page cuenta con los apartados correspondientes de las entregas posteriores que han existido en el universo de Halo .
 
 
 [![imagen-9.png](https://i.postimg.cc/Qx6sJLdd/imagen-9.png)](https://postimg.cc/N5rWQzX3)
