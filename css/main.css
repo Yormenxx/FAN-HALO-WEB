@@ -4,11 +4,14 @@
     box-sizing: border-box;
 }
 header{
-    position: relative;
-    top: 0;
-    left: 0;
+    background:url(../Group1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     width: 100%;
-    height: 700px;
+    padding: 20px;
+
 }
 header nav{
     position: relative;
@@ -17,140 +20,136 @@ header nav{
     display: flex;
     justify-content: center;
 }
-.background__container {
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 750px;
-}
 
 
 .logo_halo{
-    width: 220px;
+    width: 20%;
 
 }
 
-.container__halo_description{
-    color: white;
-    position:absolute;
-    top: 190px;
-    left: 50px;
-    width: 500px;
-    font-family: 'Manrope', sans-serif;
+.container-items-header{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    margin-left: 30px;
 }
 
 .title__halo_infinite{
+    width: 100%;
     font-family: 'Roboto Mono', monospace;
     color: white;
-    font-size: 5rem;
-    margin-top: 20px;
-    margin-left: 48px;
+    font-size: 7rem;
+    font-weight: bold;
+}
+.container__halo_description{
+    width: 100%;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.8rem;
+    font-size: bold;
+    line-height: 40px;
+    color: white;
 }
 
+.container__platforms{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    font-family: 'Manrope', sans-serif;
+}
 
 .platforms___title{
     text-transform:capitalize;
-    font-size: 2.6rem;
+    font-size: 1.7rem;
     color: white;
     font-weight: bold;
 
 }
 
-.container__platforms{
-    position: absolute;
-    top: 360px;
-    left: 50px;
-    width: 600px;
-    font-family: 'Manrope', sans-serif;
-}
 
 .items_platforms{
-    width: 700px;
     display: flex;
     align-items: center;
-    column-gap: 10px;
     color: white;
+    column-gap: 20px;
+    padding-bottom: 0px;
+    font-size: 1.6rem;
 }
 
 .battle__pass{
+    width: 65%;
     text-align: center ;
-    width: 300px;
-    margin-top: 20px;
-    margin-left: 30px;
     color: rgb(0, 69, 0);
     font-weight: bold;
     background-color: rgb(25, 249, 25);
     padding: 10px;
     border-radius: 20px;
     border: 1px solid black;
+    overflow: hidden;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.4rem;
+}
+.battle__pass:hover{
+    background-color: #fff;
+    color: rgb(0, 69, 0);
+    transition: .2s;
     cursor: pointer;
-
 }
 
-
 .container_video__realease{
-    text-align: center;
-    position: absolute;
-    top: 400px;
-    left: 1020px;
-    width: 300px;
+    width: 100%;
+    text-align: right;
+    padding-right: 40px;
 
 }
 
 .container_video__realease iframe{
-    width: 300px;
-    height: 200px;
-    /* border: 1px solid black; */
+
+    width: 15%;
     -webkit-box-shadow: 10px 10px 19px -1px rgba(0,0,0,0.75);
 -moz-box-shadow: 10px 10px 19px -1px rgba(0,0,0,0.75);
 box-shadow: 10px 10px 19px -1px rgba(0,0,0,0.75);
 }
 .container_video__realease h3{
-    padding-left: 10px;
     color: white;
-    font-size: 2rem;
     font-weight: bold;
     font-family: 'Manrope', sans-serif;
 }
 
-
-
 /*GAME PASS SECTION */
 
 .container__gamepass_join{
-    position: relative;
-    margin-top: 30px;
+    background:url(../IMG/halo-gamepass.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 120px 60px;
 
-}
-
-.bgc__container{
-    width: 100%;
-    z-index: -1;
-    position: absolute;
 }
 
 .container__information_pass{
+    width:30%;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
-    row-gap: 17px;
-    position: relative;
-    top:150px;
-    left: 860px;
-    width: 400px;
-    height: 500px;
+    row-gap: 25px;
     background-color: rgba(42, 42, 42, 0.165);
     font-family: 'Manrope', sans-serif;
     border-radius: 20px;
+    margin-right: 50px;
+    padding: 10px;
 }
 
 .container__information_pass h1{
     font-size: 50px;
     color: white;
+   
 }
 .container__information_pass p{
     font-weight: bold;
@@ -158,7 +157,7 @@ box-shadow: 10px 10px 19px -1px rgba(0,0,0,0.75);
     color: white;
 }
 .game__pass, .seriesxs{
-    width: 200px;
+    width: 30%;
 }
 
 .get__game{
@@ -186,85 +185,95 @@ box-shadow: 10px 10px 19px -1px rgba(0,0,0,0.75);
     color: white;
 }
 
+
+/* GAMES HALO SECTION */
+
 .container__games_halo{
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin-top: 250px;
     width: 100%;
     font-family: 'Manrope', sans-serif;
+    color: white;
     background-color: black;
+    padding-bottom: 30px;
 }
 
-.container__bgc_games{
-    margin-left: 130px;
-}
+
 
 .container__bgc_games h1{
-    margin-left: 28%;
-    padding-top: 40px;
     font-size: 3rem;
+    text-align: center;
+    padding-top: 20px;
 }
 
 .container__bgc_games p{
+    width: 100%;
     padding-bottom: 40px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    text-align: center;
 }
 
-.container__bgc_games{
 
-}
+
 
 .container__juegos{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     column-gap: 30px;
+    padding: 10px;
+    justify-content: center;
    
-    /* font-family: 'Manrope', sans-serif; */
 
 }
 
 
 .item__juego{
-    width: 520px;
-    height: 570px;
+    width: 40%;
+    padding: 5px;
 }
 
 .item__juego img{
     width: 100%;
 }
 
+.item__juego p{
+
+    padding-bottom: 0;
+    text-align: left;
+    
+}
+
 .item__juego  a{
     color: rgb(25, 249, 25);
     font-weight: bold;
     text-decoration: none;
+    padding: none;
+    font-size: 1.2rem;
 }
 
 .item__juego  a:hover{
     border-bottom: 1px solid white;
     transition: .5s;
 }
+
+/* 
+CONTAINER CONTROL */
+
 .control__container{
-    position: relative;
-    padding-top: 50px;
-    background-color: black;
-    margin-bottom: 500px;
-}
-.control_item{
+    background:url(../IMG/control.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     width: 100%;
-    z-index: -1;
-    position: absolute;
+    padding: 180px 60px;
+    display: flex;
+    justify-content: flex-end;
 }
 
+
 .information__container{
-    position: absolute;
-    top: 170px;
-    left: 700px;
-    width: 500px;
+    width: 40%;
     color: white;
     font-family: 'Manrope', sans-serif;
 }
@@ -288,6 +297,9 @@ box-shadow: 10px 10px 19px -1px rgba(0,0,0,0.75);
     border-bottom: 1px solid white;
     transition: .5s;
 }
+
+
+
 .container__final{
     background-color: black;
     position: relative;
@@ -298,6 +310,12 @@ box-shadow: 10px 10px 19px -1px rgba(0,0,0,0.75);
     width: 100%;
     z-index: -1;
     position: absolute;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+
 }
 
 .infor__final_contact{
